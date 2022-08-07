@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Work+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.input-icon {
+    position: relative;
+}
+.input-icon::before{
+    content: "$";
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    color: #CBD5DC;
+    font-size: 23px;
+    font-weight: 600;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 10px;
+    width: 35px;
+}
+.arrow-left {
+    left: 5px;
+}
+.arrow-right {
+    right: 5px;
+}
